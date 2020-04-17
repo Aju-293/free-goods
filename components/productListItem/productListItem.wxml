@@ -1,0 +1,11 @@
+<!--components/productListItem/productListItem.wxml-->
+<view class="product-list-item-wraper">
+  <view class="list" wx:for="{{productList}}" wx:key="id">
+    <view class="img">
+      <image src="{{item.imgUrl}}"></image>
+    </view>
+    <view class="desc">
+      <text>{{item.name}} ID:{{index+1}}</text>
+    </view>
+  </view>
+</view>

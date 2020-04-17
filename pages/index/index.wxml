@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="home-wraper">
+
+
+
+	<view class="banner-box">
+		<view class="page-section-spacing swiper">
+			<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+				<block wx:for="{{background}}" wx:key="*this">
+					<swiper-item>
+						<view class="swiper-item">
+              <image src="{{item}}"></image>
+            </view>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+
+    	<view class="search-box">
+        <view class="search-content">
+          <image src="./search.png"></image>
+          <input type="search" placeholder="搜索"></input>
+        </view>
+      </view>
+	</view>
+
+  <view class="side-margin announcement-box">
+    <image src="/images/announcement-icon.png" class="announcement-icon"></image>
+    <text>{{todayDate}} 最新商品信息</text>
+  </view>
+
+  <view class="side-margin category-box">
+    <view class="item">
+      <view class="box"><image src="/images/kitchen-icon.png"></image></view>
+      <view>厨具</view>
+    </view>
+    <view class="item">
+      <view class="box"><image src="/images/kitchen-icon.png"></image></view>
+      <view>厨具</view>
+    </view>
+    <view class="item">
+      <view class="box"><image src="/images/exercise-icon.png"></image></view>
+      <view>运动</view>
+    </view>
+    <view class="item">
+      <view class="box"><image src="/images/kitchen-icon.png"></image></view>
+      <view>厨具</view>
+    </view>
+    <view class="item">
+      <view class="box"><image src="/images/exercise-icon.png"></image></view>
+      <view>运动</view>
+    </view>
+  </view>
+
+  <view class="product-list-box">
+    <product-list-item productList="{{productList}}"></product-list-item>
+  </view>
+
+
+</view>

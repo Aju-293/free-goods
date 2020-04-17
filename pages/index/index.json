@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "萌店-HOME",
+  "navigationBarBackgroundColor": "#00BC8D",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "product-list-item": "/components/productListItem/productListItem"
+  }
+} 
