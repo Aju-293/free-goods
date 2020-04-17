@@ -26,6 +26,11 @@ Page({
     console.log(app, 'authCode');
     
     this.setData({todayDate, productList: [...productList], authCode: app.authCode});
+  },
+  gotoKnowledge: function() {
+    wx.navigateTo({
+      url: '/pages/knowledge/knowledge'
+    })
   }
 
 })

@@ -1,0 +1,21 @@
+/* pages/knowledge/knowledge.wxss */
+.knowledge-wraper {
+  width: 100%;
+  margin-top: 15rpx;
+  
+}
+.knowledge-wraper > .item {
+  width: 100%;
+  background: white;
+  margin: 15rpx 0;
+  padding: 15rpx 25rpx;
+  box-shadow: 1px 2px 3px rgb(224, 224, 224);
+  box-sizing: border-box;
+}
+.knowledge-wraper > .item > .title {
+  font-size: 28rpx;
+}
+.knowledge-wraper > .item > .content {
+  padding: 10rpx;
+  font-size: 26rpx;
+}

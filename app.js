@@ -8,20 +8,18 @@ App({
       success: (res)=> {
         if (res.code) {
           _thisBind.authCode = res.code;
-          wx.getUserInfo({
-            complete: (res) => {
-              console.info(res, 'getUserInfo');
-            },
+          wx.getSetting({
+            complete: (res) => {},
             success: (res)=> {
-              console.info('success')
+              if (res.authSetting['scope.userInfo']) {
+                wx.getUserInfo({
+                  success: (res)=> {
+                    console.info(res)
+                  }
+                });
+              }
             }
-          })
-          // wx.getSetting({//得到接口授权信息
-          //   complete: (res) => {},
-          //   success: (res)=> {
-          //     console.log(res,'getSetting')
-          //   }
-          // });
+          });
         }
       },
       fail: (err)=> {

@@ -1,0 +1,11 @@
+<!--pages/knowledge/knowledge.wxml-->
+<view class="knowledge-wraper">
+  <view class="item">
+    <view class="title">关于授权</view>
+    <view class="content">授权只需要一次， 只要授权过就可以直接在wx.getUserInfo API中自己获取到个人信息</view>
+  </view>
+  <view class="item">
+    <view class="title">关于授权</view>
+    <view class="content">授权只需要一次， 只要授权过就可以直接在wx.getUserInfo API中自己获取到个人信息</view>
+  </view>
+</view>
